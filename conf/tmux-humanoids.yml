@@ -1,0 +1,14 @@
+name: humanoids22
+root: ~
+
+windows:
+  - server-and-player:
+      layout: main-vertical
+      panes:
+        - sleep 3; yarp wait /HDE/WholeBodyKinematicsWrapper/state:o; yarprobotinterface --config wbkvisualizer_humanoids2022.xml
+        - yarp server --write
+        - sleep 3; yarp wait /yarpdataplayer/rpc:i; echo "load /home/user/iit_ws/dataset/walk2" | yarp rpc /yarpdataplayer/rpc:i; yarp wait /HDE/WholeBodyKinematicsWrapper/state:o; echo "play" | yarp rpc /yarpdataplayer/rpc:i; echo "pause" | yarp rpc "/yarpdataplayer/rpc:i"
+        - sleep 3; yarp wait /iFeelSuit1/WearableData/data:o; yarprobotinterface --config humanoids2022.xml
+        - sleep 3; yarp wait /robot; yarpdev --device transformServer --ROS::enable_ros_publisher 0 --ROS::enable_ros_subscriber 0
+        - sleep 3; yarp wait /robot; yarpdataplayer-console --withExtraTimeCol 2
+        - sleep 3; yarp wait /WholeBodyKinematicsDevice/rpc:i; sleep 5; bash /home/user/iit_ws/kindynfusion/src/scripts/TPoseCalibrationAndInitBaseEKF.sh; echo "play" | yarp rpc /yarpdataplayer/rpc:i; sleep 20; tmux kill-session
