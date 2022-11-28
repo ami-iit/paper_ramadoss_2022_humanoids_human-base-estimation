@@ -1,6 +1,9 @@
 name: Publish Docker Image
 
-on: [workflow_dispatch]
+#on: [workflow_dispatch]
+on:
+  pull_request:
+    branches: main
 
 jobs:
   publish:
