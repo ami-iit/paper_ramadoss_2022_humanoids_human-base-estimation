@@ -17,5 +17,4 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           workdir: dockerfiles
-          context: dockerfiles/../
           registry: ghcr.io
