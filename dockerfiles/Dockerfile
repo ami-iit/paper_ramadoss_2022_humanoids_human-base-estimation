@@ -93,7 +93,7 @@ RUN echo "export KinDynFusion_DIR=${WSDIR}/kindynfusion/install" >> ~/.bashrc &&
     echo "export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/home/user/iit_ws/kindynfusion/install/lib" >> ~/.bashrc && \
     yarp namespace /robot
 
-#CMD ["tmuxinator", "start", "humanoids22"]
+CMD ["tmuxinator", "start", "humanoids22"]
 
 
 
