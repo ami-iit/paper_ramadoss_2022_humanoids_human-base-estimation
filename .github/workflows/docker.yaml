@@ -16,5 +16,4 @@ jobs:
           name: ami-iit/human-base-estimation-docker
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-          workdir: dockerfiles
           registry: ghcr.io
