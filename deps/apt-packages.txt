@@ -1,0 +1,5 @@
+ca-certificates
+wget
+git
+tmuxinator
+libgl1-mesa-glx
