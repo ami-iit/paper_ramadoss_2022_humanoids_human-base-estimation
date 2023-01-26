@@ -19,7 +19,7 @@ P. Ramadoss, L.Rapetti, Y.Tirupachuri, R.Grieco, G. Milani, E. Valli, S. Dafarra
 
 <div align="center">
   <a href="#reproducing-the-experiments"><b>Installation</b></a> |
-  <a href="https://arxiv.org/abs/2205.07835"><b>arXiv</b></a> | 
+  <a href="https://ieeexplore.ieee.org/abstract/document/10000199"><b>Document</b></a> | 
   <a href="https://youtu.be/svX_QNSaElw"><b>YouTube</b></a>
 </div>
 
@@ -49,10 +49,17 @@ For more details on the installation, implementation, and parameters configurati
 **Known issues:** Starting the docker daemon using Docker Desktop does not allow to display the visualizer GUI on the screen.  I had to start the Docker daemon using `dockerd` with root privileges and then run the docker container also with root privileges in order to visualize the experiment.
 
 ## Citing this work
-
-To be updated soon.
-
-
+```
+@INPROCEEDINGS{10000199,
+  author={Ramadoss, Prashanth and Rapetti, Lorenzo and Tirupachuri, Yeshasvi and Grieco, Riccardo and Milani, Gianluca and Valli, Enrico and Dafarra, Stefano and Traversaro, Silvio and Pucci, Daniele},
+  booktitle={2022 IEEE-RAS 21st International Conference on Humanoid Robots (Humanoids)}, 
+  title={Estimation of Human Base Kinematics using Dynamical Inverse Kinematics and Contact-Aided Lie Group Kalman Filter}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={364-369},
+  doi={10.1109/Humanoids53995.2022.10000199}}
+```
 ## Maintainer
 
 This repository is maintained by:
