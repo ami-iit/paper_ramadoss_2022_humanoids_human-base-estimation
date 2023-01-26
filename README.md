@@ -19,7 +19,7 @@ P. Ramadoss, L.Rapetti, Y.Tirupachuri, R.Grieco, G. Milani, E. Valli, S. Dafarra
 
 <div align="center">
   <a href="#reproducing-the-experiments"><b>Installation</b></a> |
-  <a href="https://arxiv.org/abs/2205.07835"><b>arXiv</b></a> | 
+  <a href="https://ieeexplore.ieee.org/abstract/document/10000199"><b>Document</b></a> | 
   <a href="https://youtu.be/svX_QNSaElw"><b>YouTube</b></a>
 </div>
 
